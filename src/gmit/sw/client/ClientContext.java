@@ -8,43 +8,45 @@ import java.io.Serializable;
 public class ClientContext implements Serializable
 
 {
-	private static final long serialVersionUID = 1L; // 
+	private static final long serialVersionUID = 1L; 
 	public static final String CON_FILE="src/gmit/sw/conf.xml"; // taking from conf.xml file
 	private String username;
-	private String serverHostName;
-	private String serverPort;
-	private String download;
+	private String server_host;
+	private String server_port;
+	private String download_dir;
 	
-	// getters & setters set up automcatically
+	// getters & setters set up automatically
 	public String getUsername() {
 		return username;
 	}
 	public void setUserName(String clientUsername) {
 		this.username = clientUsername;
 	}
-	public String getServerHostName() {
-		return serverHostName;
+
+
+	public String getServer_host() {
+		return server_host;
 	}
-	public void setServerHostName(String serverHostName) {
-		this.serverHostName = serverHostName;
+	public void setServer_host(String server_host) {
+		this.server_host = server_host;
 	}
-	public String getServerPort() {
-		return serverPort;
+	public String getServer_port() {
+		return server_port;
 	}
-	public void setServerPort(String serverPort) {
-		this.serverPort = serverPort;
+	public void setServer_port(String server_port) {
+		this.server_port = server_port;
 	}
-	public String getDownload() {
-		return download;
+	public String getDownload_dir() {
+		return download_dir;
 	}
-	public void setDownload(String download) {
-		this.download = download;
+	public void setDownload_dir(String download_dir) {
+		this.download_dir = download_dir;
 	}
 	
 	@Override
 	public String toString() {
-		return "Context [username=" + username + ", serverHostName=" + serverHostName + ", serverPort=" + serverPort
-				+ ", download=" + download + "]";
+		return "Context [username=" + username + ", server_host=" + server_host + ", server_port=" + server_port
+				+ ", download_dir=" + download_dir + "]";
 	}
 	
 }//end main
