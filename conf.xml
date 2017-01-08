@@ -1,0 +1,5 @@
+<client-config username="Gary-OOP">
+	<server-host>127.0.0.1</server-host>
+	<server-port>7777</server-port>
+	<download>./downloads/</download>
+</client-config>
